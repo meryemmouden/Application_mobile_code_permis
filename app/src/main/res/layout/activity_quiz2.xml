@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz2">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:src="@drawable/v6"
+        android:layout_marginTop="90dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Quiz2"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:text="Le panneau de danger indique une succession de virages dont le 1er est :"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp">
+
+        <RadioButton
+            android:id="@+id/radiobtn1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:text="A droite"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobtn2"
+            android:layout_width="146dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:text="A gauche"
+            tools:ignore="ExtraText">>
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:background="#ACA3A3"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="NEXT"
+        android:textSize="30sp" />
+
+</RelativeLayout>
